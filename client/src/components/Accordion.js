@@ -20,7 +20,7 @@ const Accordion = ({ title, content }) => {
     <div className="accordion-item">
       <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
-        <div>{content.length===0? `Empty` : isActive? null : '+'}</div>
+        <div>{content.length===0? `Empty` : isActive? null : content.length + " items"}</div>
       </div>
       {isActive && content.length !==0 && <div className="accordion-content">
       <table className="table mt-5 text-center">

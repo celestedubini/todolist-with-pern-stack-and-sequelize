@@ -52,6 +52,7 @@ const InputTodo = () => {
                     <option value='Condiment'>Condiment</option>
                     <option value='Dairy'>Dairy</option>
                     <option value='Boxed Dinners and Pasta'>Boxed Dinners and Pasta</option>
+                    <option value='Paper Products and Cleaning'>Paper Products and Cleaning</option>
                 </select>
                 <button type="submit" className="btn btn-success">Add</button>
             </form>
