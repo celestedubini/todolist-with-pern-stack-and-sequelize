@@ -3,7 +3,6 @@ const app = express();
 const cors = require("cors");
 const routes = require('./Router/routes');
 const sequelize = require("./util/databaseconnect");
-require("./util/associations")
 // middleware
 app.use(cors())
 app.use(express.json())
@@ -70,6 +69,6 @@ app.use(routes)
 //     }
 // });
 
-sequelize.sync({ force: true })
+sequelize.sync()
     .then(app.listen(5000, console.log('server is running at port 5000')))
     .catch(error => { console.log(error) })
