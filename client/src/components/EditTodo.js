@@ -37,7 +37,7 @@ const EditTodo = ({ todo }) => {
                         <input className="form-control" type="text"
                             value={description}
                             onChange={event => setDescription(event.target.value)} />
-                        <select name="Aisle" value={todo.aisle} onChange={event => setAisle(event.target.value)}>
+                        <select name="Aisle" value={aisle} onChange={event => setAisle(event.target.value)}>
                             <option value='Baking'>Baking</option>
                             <option value='Beverage'>Beverage</option>
                             <option value='Bread'>Bread</option>
