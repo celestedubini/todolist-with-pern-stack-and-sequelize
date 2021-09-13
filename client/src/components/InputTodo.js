@@ -5,7 +5,7 @@ const InputTodo = () => {
     const [description,
         setDescription] = useState("");
     const [aisle,
-        setAisle] = useState("");
+        setAisle] = useState("Baking");
 
     const handleAisleInput = (event) => {
         setAisle(event.target.value)

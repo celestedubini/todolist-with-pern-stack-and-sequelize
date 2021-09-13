@@ -21,7 +21,7 @@ const ListTodo = () => {
     }, [todos]);
     return <Fragment>
             <div className="accordion">
-                {Aisles.map(aisle => (<Accordion title={aisle} content={todos.filter(todo => todo.aisle===aisle)}/>))}
+                {Aisles.map((aisle, index) => (<Accordion title={aisle} content={todos.filter(todo => todo.aisle===aisle)} key={index}/>))}
                 </div>
     </Fragment>;
 };
